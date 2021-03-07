@@ -1,0 +1,40 @@
+%danger-line {
+    content: '';
+    display: block;
+    width: 127px;
+    height: 3px;
+    background: $melon-color;
+    margin: auto;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+    %gold-line {
+        content: "";
+        display: none;
+        height: 3px;
+        width: 50px;
+        background: $gold-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%white-color {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: auto;
+    margin-top: 30px;
+}

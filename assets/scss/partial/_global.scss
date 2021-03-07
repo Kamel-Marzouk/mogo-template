@@ -1,0 +1,63 @@
+h3::after {
+    @extend %danger-line;
+}
+
+body {
+    font-family: "Montserrat", "Roboto", "Kaushan Script";
+}
+
+h1 {
+    line-height: 140px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 150px;
+    width: 70%;
+    &::after {
+        @extend %white-color;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    font-size: 0.875rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    font-family: "Roboto";
+}
+
+h5 {
+    font-family: "Kaushan Script";
+    font-weight: 400;
+    font-size: 24px;
+}
+
+h4 {
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Roboto";
+
+    &::after {
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: $melon-color;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+section {
+    padding: 50px 0;
+}

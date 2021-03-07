@@ -1,0 +1,526 @@
+body {
+  font-family: "Montserrat", "Roboto", "Kaushan Script";
+}
+
+h1 {
+  line-height: 140px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-size: 150px;
+  width: 70%;
+}
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 0.875rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.875rem;
+  font-family: "Roboto";
+}
+
+h5 {
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h4 {
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+}
+h4::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 127px;
+  height: 3px;
+  background: #f38181;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-header .navbar li:hover a::after {
+    content: "";
+    display: none;
+    height: 3px;
+    width: 50px;
+    background: #f6c23a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+.our-work .img-wrapper .overlay, .our-team .card figure .overlay, .story .img-wrapper .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/*             start header                  */
+.main-header {
+  background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75)), url("../images/header/homebg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+}
+.main-header .slider ul li h5 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  margin-right: 5px;
+}
+.main-header .navbar {
+  background-color: transparent;
+}
+.main-header .navbar li {
+  position: relative;
+}
+.main-header .navbar li:hover a::after {
+  display: block;
+}
+.main-header .navbar li:hover a.text-light {
+  color: #f6c23a !important;
+}
+.main-header article {
+  height: 850px;
+}
+.main-header article .welcome h2 {
+  font-size: 72px;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+}
+.main-header article .welcome button {
+  border: 3px solid #ffffff;
+  margin-top: 4rem;
+  width: 160px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+@media only screen and (max-width: 1200px) {
+  .main-header h1 {
+    font-size: 140px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-header h1 {
+    width: 70%;
+    font-size: 6rem;
+  }
+  .main-header h2 {
+    font-size: 3rem;
+  }
+}
+
+/*             end header                  */
+/*         start story about us            */
+.story .img-wrapper {
+  position: relative;
+}
+.story .img-wrapper:hover {
+  box-shadow: 7px 7px #8df5af;
+}
+.story .img-wrapper img {
+  opacity: 1;
+  display: block;
+  height: auto;
+}
+.story .img-wrapper .overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75));
+  flex-direction: column;
+}
+.story .img-wrapper .overlay:hover {
+  opacity: 1;
+}
+
+/*         start story about us            */
+/*            start statistics            */
+.statistics {
+  background: #95e1d3;
+  padding: 0;
+}
+.statistics .col-lg-3 {
+  padding: 80px 20px;
+  border-right: 1px solid #ffffff;
+}
+.statistics h5 {
+  font-size: 4.5rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.statistics h6 {
+  font-size: 1.125rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+/*             end statistics            */
+/*             start amazing services    */
+.amazing-services header {
+  margin-bottom: 70px;
+}
+.amazing-services h3 {
+  font-size: 1.875rem;
+  line-height: 3rem;
+  margin-bottom: 10px;
+}
+.amazing-services h5 {
+  font-size: 0.875rem;
+  line-height: 2.5rem;
+  margin-bottom: 20px;
+}
+.amazing-services p {
+  line-height: 1.375rem;
+  font-size: 0.875rem;
+}
+.amazing-services .icons {
+  margin-right: 5%;
+}
+.amazing-services .icons i {
+  color: #95e1d3;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.amazing-services .dropdown-divider {
+  margin: 50px 0;
+}
+
+/*             end amazing services    */
+/*             start unique design     */
+.unique-design {
+  background: url("../images/uniquedesign/divicebg.jpg") no-repeat 100% 100%;
+  background-size: cover;
+  padding: 0;
+}
+.unique-design .home-overlay {
+  background-color: rgba(237, 237, 237, 0.8);
+  width: 100%;
+  height: auto;
+  padding: 50px 0 0;
+}
+.unique-design .home-overlay .devices {
+  position: relative;
+}
+.unique-design .home-overlay .devices .device-two {
+  position: absolute;
+  right: 21%;
+  bottom: -100px;
+  z-index: 99;
+}
+
+/*             end unique design     */
+/*              start service        */
+.service i {
+  color: #3bd3ba;
+  font-size: 1.575rem;
+}
+.service .card p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+}
+
+/*              end service        */
+/*              start comments     */
+.comments .row p {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+}
+.comments .row .blockquote-footer {
+  color: #f38181;
+  font-size: 30px;
+}
+.comments .row .blockquote-footer span {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+  color: #333333;
+}
+.comments .carousel-control-prev {
+  justify-content: flex-start;
+  left: -10px;
+}
+.comments .carousel-control-next {
+  justify-content: flex-end;
+  right: -10px;
+}
+.comments .carousel-control-next,
+.comments .carousel-control-prev {
+  color: black;
+  font-size: 1.5rem;
+}
+
+/*              end comments     */
+/*             start our team      */
+.our-team .card figure {
+  position: relative;
+}
+.our-team .card figure:hover {
+  box-shadow: 7px 7px #8df5af;
+}
+.our-team .card figure img {
+  opacity: 1;
+  display: block;
+  height: auto;
+}
+.our-team .card figure .overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75));
+  flex-direction: column;
+}
+.our-team .card figure .overlay:hover {
+  opacity: 1;
+}
+.our-team .card figure .overlay li i {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.5rem;
+  color: #f38181;
+  background: #fce38a;
+  transition: 0.6s;
+}
+.our-team .card figure .overlay li:hover i {
+  color: #ffffff;
+  background: #f38181;
+}
+.our-team .card h6 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  margin-bottom: 0.5rem;
+}
+.our-team .card p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+}
+
+/*             end our team      */
+/*              start brand        */
+.brands figure {
+  text-align: center;
+}
+
+/*              end brand        */
+/*              start our work    */
+.our-work figure {
+  margin: 0;
+}
+.our-work .img-wrapper {
+  position: relative;
+}
+.our-work .img-wrapper img {
+  opacity: 1;
+  display: block;
+  height: auto;
+}
+.our-work .img-wrapper .overlay {
+  opacity: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75));
+  flex-direction: column;
+}
+.our-work .img-wrapper .overlay:hover {
+  opacity: 1;
+}
+.our-work .img-wrapper .overlay i {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.our-work .img-wrapper .overlay h6 {
+  margin-bottom: 5px;
+  font-family: "montserratregular";
+  font-size: 0.875rem;
+}
+.our-work .img-wrapper .overlay p {
+  font-family: "roboto_condensedlight_italic";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+/*              end our work    */
+/*              start clients   */
+.clients {
+  background: url("../images/uniquedesign/divicebg.jpg") no-repeat 100% 100%;
+  background-size: cover;
+  padding: 0;
+}
+.clients .home-overlay {
+  background-color: rgba(237, 237, 237, 0.8);
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+.clients .home-overlay .clients__wrapper .client-comment {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+}
+.clients .home-overlay .clients__wrapper .client-comment figure {
+  margin-left: 1rem;
+}
+.clients .home-overlay .clients__wrapper .client-comment figure img {
+  border-radius: 50%;
+}
+.clients .home-overlay .clients__wrapper .client-comment .comment-content h5 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.clients .home-overlay .clients__wrapper .client-comment .comment-content p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+/*              end clients   */
+/*              start our stories   */
+.our-stories .card .img-wrapper {
+  position: relative;
+}
+.our-stories .card .img-wrapper .content {
+  position: absolute;
+  background: #3bd3ba;
+  color: #ffffff;
+  left: -10px;
+  bottom: 20px;
+  text-align: center;
+  width: 60px;
+  height: 70px;
+  padding-top: 10px;
+}
+.our-stories .card h5 {
+  font-family: "montserratregular";
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.our-stories .card p {
+  line-height: 1.375rem;
+  font-size: 0.875rem;
+}
+.our-stories .card i {
+  margin-right: 10px;
+  color: #95e1d3;
+}
+
+/*              end our stories    */
+/*               start map    */
+.map {
+  background: url("../images/openmap/mapbg.jpg") no-repeat 100% 100%;
+  background-size: cover;
+  padding: 0;
+}
+.map .home-overlay {
+  background-color: rgba(237, 237, 237, 0.8);
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+/*               end map    */
+/*               start contact    */
+.contact {
+  background: #f8f8f8;
+}
+.contact header {
+  margin-bottom: 2rem;
+}
+.contact h6 {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+}
+.contact h6 span {
+  font-weight: bolder;
+}
+.contact .item h6 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #333333 !important;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+.contact ul li a {
+  color: #3bd3ba;
+}
+.contact form button {
+  background: #3bd3ba;
+}
+
+/*               end contact    */
+/*               start footer    */
+footer h6 {
+  font-weight: 400;
+  font-family: "Montserrat";
+  padding: 15px 0;
+}
+
+/*               end footer    */
+
+/*# sourceMappingURL=style.css.map */

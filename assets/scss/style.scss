@@ -1,0 +1,554 @@
+@import 'partial/variables';
+@import 'partial/global';
+@import 'partial/placeholder';
+
+/*             start header                  */
+.main-header {
+    background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75)),
+        url('../images/header/homebg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+
+    .slider {
+        ul li h5{
+            font-size: 24px;
+            font-weight: 700;
+            font-family: "Montserrat";
+            margin-right: 5px;
+        }
+    }
+
+    .navbar {
+        background-color: transparent;
+
+        li {
+            position: relative;
+
+            &:hover {
+                a {
+                    &::after {
+                        display: block;
+                        @extend %gold-line;
+                    }
+
+                    &.text-light {
+                        color: $gold-color !important;
+                    }
+                }
+
+            }
+        }
+    }
+
+    article {
+        height: 850px;
+
+        .welcome {
+            h2 {
+                font-size: 72px;
+                font-weight: 400;
+                font-family: "Kaushan Script";
+
+            }
+
+            button {
+                border: 3px solid $white-color;
+                margin-top: 4rem;
+                width: 160px;
+                height: 40px;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: "Montserrat";
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        h1 {
+            // width: 50%;
+            font-size: 140px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        h1 {
+            width: 70%;
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+/*             end header                  */
+/*         start story about us            */
+.story {
+    .img-wrapper {
+        position: relative;
+
+        &:hover {
+            box-shadow: 7px 7px rgb(141, 245, 175);
+        }
+
+        img {
+            opacity: 1;
+            display: block;
+            height: auto;
+        }
+
+        .overlay {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75));
+            @extend %flex;
+            flex-direction: column;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/*         start story about us            */
+/*            start statistics            */
+.statistics {
+    background: #95e1d3;
+    padding: 0;
+    .col-lg-3 {
+        padding: 80px 20px;
+        border-right: 1px solid $white-color;
+    }
+
+    h5 {
+        font-size: 4.5rem;
+        font-family: "Montserrat";
+        font-weight: 700;
+    }
+
+    h6 {
+        font-size: 1.125rem;
+        font-family: "Montserrat";
+        font-weight: 400;
+    }
+}
+
+/*             end statistics            */
+/*             start amazing services    */
+.amazing-services {
+    header {
+        margin-bottom: 70px;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        line-height: 3rem;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        font-size: 0.875rem;
+        line-height: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.375rem;
+        font-size: 0.875rem;
+    }
+
+    .icons {
+        margin-right: 5%;
+
+        i {
+            color: #95e1d3;
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+    }
+
+    .dropdown-divider {
+        margin: 50px 0;
+    }
+}
+
+/*             end amazing services    */
+/*             start unique design     */
+.unique-design {
+    background: url('../images/uniquedesign/divicebg.jpg') no-repeat 100% 100%;
+    background-size: cover;
+    padding: 0;
+
+    .home-overlay {
+        background-color: rgba(237, 237, 237, 0.80);
+        width: 100%;
+        height: auto;
+        padding: 50px 0 0;
+
+        .devices {
+            position: relative;
+
+            .device-two {
+                position: absolute;
+                right: 21%;
+                bottom: -100px;
+                z-index: 99;
+            }
+        }
+    }
+}
+
+/*             end unique design     */
+/*              start service        */
+.service {
+    i {
+        color: $icon-color;
+        font-size: 1.575rem;
+    }
+
+    .card {
+        p {
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            font-style: italic;
+            font-family: "Roboto";
+        }
+    }
+}
+
+/*              end service        */
+/*              start comments     */
+.comments {
+    .row {
+        p {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 300;
+            font-style: italic;
+            font-family: "Roboto";
+        }
+
+        .blockquote-footer {
+            color: $melon-color;
+            font-size: 30px;
+
+            span {
+                font-size: 24px;
+                font-weight: 400;
+                font-family: "Kaushan Script";
+                color: #333333;
+            }
+        }
+    }
+
+    .carousel-control-prev {
+        justify-content: flex-start;
+        left: -10px;
+    }
+
+    .carousel-control-next {
+        justify-content: flex-end;
+        right: -10px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        color: black;
+        font-size: 1.5rem;
+    }
+}
+
+/*              end comments     */
+/*             start our team      */
+.our-team {
+    .card {
+
+        figure {
+            position: relative;
+
+            &:hover {
+                box-shadow: 7px 7px rgb(141, 245, 175);
+            }
+
+            img {
+                opacity: 1;
+                display: block;
+                height: auto;
+            }
+
+            .overlay {
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75));
+                @extend %flex;
+                flex-direction: column;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                li {
+                    i {
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 1.5rem;
+                        color: $melon-color;
+                        background: #fce38a;
+                        transition: 0.6s;
+                    }
+
+                    &:hover {
+                        i {
+                            color: $white-color;
+                            background: $melon-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        h6 {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Montserrat";
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            font-style: italic;
+            font-family: "Roboto";
+        }
+    }
+
+}
+
+/*             end our team      */
+/*              start brand        */
+.brands {
+
+    figure {
+        text-align: center;
+    }
+}
+
+/*              end brand        */
+/*              start our work    */
+.our-work {
+    figure {
+        margin: 0;
+    }
+
+    .img-wrapper {
+        position: relative;
+
+        img {
+            opacity: 1;
+            display: block;
+            height: auto;
+        }
+
+        .overlay {
+            opacity: 0;
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75));
+            @extend %flex;
+            flex-direction: column;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            i {
+                margin-bottom: 10px;
+                font-size: 2rem;
+            }
+
+            h6 {
+                margin-bottom: 5px;
+                font-family: 'montserratregular';
+                font-size: 0.875rem;
+            }
+
+            p {
+                font-family: 'roboto_condensedlight_italic';
+                font-size: 00.875rem;
+                line-height: 1.375rem;
+            }
+        }
+    }
+}
+
+/*              end our work    */
+/*              start clients   */
+.clients {
+    background: url('../images/uniquedesign/divicebg.jpg') no-repeat 100% 100%;
+    background-size: cover;
+    padding: 0;
+
+    .home-overlay {
+        background-color: rgba(237, 237, 237, 0.80);
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+
+        .clients__wrapper {
+            .client-comment {
+                display: flex;
+                align-items: flex-start;
+                padding: 1rem 2rem;
+
+                figure {
+                    margin-left: 1rem;
+
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                .comment-content {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: "Montserrat";
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        font-family: "Roboto";
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/*              end clients   */
+/*              start our stories   */
+.our-stories {
+    .card {
+        .img-wrapper {
+            position: relative;
+
+            .content {
+                position: absolute;
+                background: $icon-color;
+                color: $white-color;
+                left: -10px;
+                bottom: 20px;
+                text-align: center;
+                width: 60px;
+                height: 70px;
+                padding-top: 10px;
+            }
+        }
+
+        h5 {
+            font-family: 'montserratregular';
+            font-size: 0.875rem;
+            font-weight: 400;
+        }
+
+        p {
+            line-height: 1.375rem;
+            font-size: 0.875rem;
+        }
+
+        i {
+            margin-right: 10px;
+            color: #95e1d3;
+        }
+    }
+}
+
+/*              end our stories    */
+/*               start map    */
+.map {
+    background: url('../images/openmap/mapbg.jpg') no-repeat 100% 100%;
+    background-size: cover;
+    padding: 0;
+
+    .home-overlay {
+        background-color: rgba(237, 237, 237, 0.80);
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+/*               end map    */
+/*               start contact    */
+.contact {
+    background: #f8f8f8;
+
+    header {
+        margin-bottom: 2rem;
+    }
+
+    h6 {
+        font-family: "Montserrat";
+        font-size: 0.875rem;
+
+        span {
+            font-weight: bolder;
+        }
+    }
+
+    .item {
+        h6 {
+            font-size: 12px;
+            line-height: 18px;
+            color: #333333 !important;
+            font-weight: 400;
+            font-family: "Montserrat";
+            font-weight: bold;
+        }
+    }
+
+    ul li a {
+        color: $icon-color;
+    }
+
+    form button {
+        background: $icon-color;
+    }
+}
+
+/*               end contact    */
+/*               start footer    */
+footer {
+    h6 {
+        font-weight: 400;
+        font-family: "Montserrat";
+        padding: 15px 0;
+    }
+
+}
+
+/*               end footer    */

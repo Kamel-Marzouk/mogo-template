@@ -118,6 +118,7 @@ h1::after {
 .main-header .navbar li:hover a.text-light {
   color: #f6c23a !important;
 }
+
 .main-header article {
   height: 850px;
 }
@@ -135,18 +136,42 @@ h1::after {
   font-weight: 700;
   font-family: "Montserrat";
 }
+@media only screen and (max-width: 768px) {
+  .main-header article .welcome article h1 {
+    font-size: 4rem !important;
+  }
+  .main-header article .welcome .welcome h2 {
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width: 1200px) {
-  .main-header h1 {
-    font-size: 140px;
+  .main-header article .welcome h1 {
+    font-size: 120px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main-header article .welcome h1 {
+    font-size: 90px;
+  }
+  .main-header article .welcome .welcome h2 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .main-header h1 {
+  .main-header article .welcome h1 {
     width: 70%;
-    font-size: 6rem;
+    font-size: 4rem;
   }
-  .main-header h2 {
-    font-size: 3rem;
+  .main-header article .welcome .welcome h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .main-header article .welcome h1 {
+    font-size: 36px;
+  }
+  .main-header article .welcome .welcome h2 {
+    font-size: 26px;
   }
 }
 
@@ -199,6 +224,12 @@ h1::after {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 768px) {
+  .statistics .col-lg-3 {
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+}
 /*             end statistics            */
 /*             start amazing services    */
 .amazing-services header {
